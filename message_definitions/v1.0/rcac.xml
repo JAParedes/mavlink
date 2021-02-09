@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<mavlink>
+  <include>common.xml</include>
+  <enums>
+    </enums>
+  <messages>
+		<message id="10001" name="RCAC_ATT_RATE_VARIABLES">
+			<description>Attitude controller RCAC variables</description>
+			<field type="uint64_t" name="timestamp">Time since system start</field>
+			<field type="uint8_t" name="switch_att">RCAC Att Controller switch</field>
+			<field type="uint8_t" name="switch_rate">RCAC Rate Controller switch</field>
+			<field type="float" name="alpha_pid_att">Gain multiplied by the PID attitude gains</field>
+			<field type="float" name="alpha_pid_rate">Gain multiplied by the PID rate gains</field>
+			<field type="float" name="p11_att">P(1,1) of the RCAC Attitude Controller</field>
+			<field type="float" name="p11_ratex">P(1,1) of the RCAC Rate Controller</field>
+			<field type="float[3]" name="rcac_att_theta">P gains for the Attitude Controller</field>
+			<field type="float[12]" name="rcac_rate_theta">PID+FF gains for the Rate Controller</field>
+		</message>
+		<message id="10002" name="RCAC_POS_VEL_VARIABLES">
+			<description>Position controller RCAC variables</description>
+			<field type="uint64_t" name="timestamp">Time since system start</field>
+			<field type="float" name="pid_factor">PID scaling</field>
+			<field type="float" name="rcac_master_sw">Master RCAC switch</field>
+			<field type="uint8_t" name="switch_pos">RCAC Position Controller switch</field>
+			<field type="uint8_t" name="switch_vel">RCAC Velocity Controller switch</field>
+			<field type="float" name="alpha_pid_pos">Gain multiplied by the PID position gains</field>
+			<field type="float" name="alpha_pid_vel">Gain multiplied by the PID velocity gains</field>
+			<field type="float" name="p11_pos">P(1,1) of the RCAC Position Controllerr</field>
+			<field type="float" name="p11_velx">P(1,1) of the RCAC Velocity Controller</field>
+			<field type="float[3]" name="rcac_pos_theta">P gains for the Position Controller</field>
+			<field type="float[9]" name="rcac_vel_theta">PID gains for the Velocity Controller</field>
+		</message>
+	</messages>
+</mavlink>
