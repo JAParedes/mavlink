@@ -1,10 +1,10 @@
 /** @file
- *    @brief MAVLink comm protocol testsuite generated from rcac _3.xml
+ *    @brief MAVLink comm protocol testsuite generated from rcac_3.xml
  *    @see http://qgroundcontrol.org/mavlink/
  */
 #pragma once
-#ifndef RCAC _3_TESTSUITE_H
-#define RCAC _3_TESTSUITE_H
+#ifndef RCAC_3_TESTSUITE_H
+#define RCAC_3_TESTSUITE_H
 
 #ifdef __cplusplus
 extern "C" {
@@ -13,12 +13,12 @@ extern "C" {
 #ifndef MAVLINK_TEST_ALL
 #define MAVLINK_TEST_ALL
 static void mavlink_test_common(uint8_t, uint8_t, mavlink_message_t *last_msg);
-static void mavlink_test_rcac _3(uint8_t, uint8_t, mavlink_message_t *last_msg);
+static void mavlink_test_rcac_3(uint8_t, uint8_t, mavlink_message_t *last_msg);
 
 static void mavlink_test_all(uint8_t system_id, uint8_t component_id, mavlink_message_t *last_msg)
 {
     mavlink_test_common(system_id, component_id, last_msg);
-    mavlink_test_rcac _3(system_id, component_id, last_msg);
+    mavlink_test_rcac_3(system_id, component_id, last_msg);
 }
 #endif
 
@@ -205,7 +205,7 @@ static void mavlink_test_rcac_pos_vel_variables(uint8_t system_id, uint8_t compo
         MAVLINK_ASSERT(memcmp(&packet1, &packet2, sizeof(packet1)) == 0);
 }
 
-static void mavlink_test_rcac _3(uint8_t system_id, uint8_t component_id, mavlink_message_t *last_msg)
+static void mavlink_test_rcac_3(uint8_t system_id, uint8_t component_id, mavlink_message_t *last_msg)
 {
     mavlink_test_rcac_att_variables(system_id, component_id, last_msg);
     mavlink_test_rcac_rate_variables(system_id, component_id, last_msg);
@@ -215,4 +215,4 @@ static void mavlink_test_rcac _3(uint8_t system_id, uint8_t component_id, mavlin
 #ifdef __cplusplus
 }
 #endif // __cplusplus
-#endif // RCAC _3_TESTSUITE_H
+#endif // RCAC_3_TESTSUITE_H

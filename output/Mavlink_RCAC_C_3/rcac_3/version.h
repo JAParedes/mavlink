@@ -1,5 +1,5 @@
 /** @file
- *  @brief MAVLink comm protocol built from rcac _3.xml
+ *  @brief MAVLink comm protocol built from rcac_3.xml
  *  @see http://mavlink.org
  */
 #pragma once
@@ -7,7 +7,7 @@
 #ifndef MAVLINK_VERSION_H
 #define MAVLINK_VERSION_H
 
-#define MAVLINK_BUILD_DATE "Wed Feb 10 2021"
+#define MAVLINK_BUILD_DATE "Fri Feb 12 2021"
 #define MAVLINK_WIRE_PROTOCOL_VERSION "2.0"
 #define MAVLINK_MAX_DIALECT_PAYLOAD_SIZE 255
  

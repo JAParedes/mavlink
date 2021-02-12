@@ -1,13 +1,13 @@
 /** @file
- *  @brief MAVLink comm protocol generated from rcac _3.xml
+ *  @brief MAVLink comm protocol generated from rcac_3.xml
  *  @see http://mavlink.org
  */
 #pragma once
-#ifndef MAVLINK_RCAC _3_H
-#define MAVLINK_RCAC _3_H
+#ifndef MAVLINK_RCAC_3_H
+#define MAVLINK_RCAC_3_H
 
 #ifndef MAVLINK_H
-    #error Wrong include order: MAVLINK_RCAC _3.H MUST NOT BE DIRECTLY USED. Include mavlink.h from the same directory instead or set ALL AND EVERY defines from MAVLINK.H manually accordingly, including the #define MAVLINK_H call.
+    #error Wrong include order: MAVLINK_RCAC_3.H MUST NOT BE DIRECTLY USED. Include mavlink.h from the same directory instead or set ALL AND EVERY defines from MAVLINK.H manually accordingly, including the #define MAVLINK_H call.
 #endif
 
 #undef MAVLINK_THIS_XML_IDX
@@ -29,7 +29,7 @@ extern "C" {
 
 #include "../protocol.h"
 
-#define MAVLINK_ENABLED_RCAC _3
+#define MAVLINK_ENABLED_RCAC_3
 
 // ENUM DEFINITIONS
 
@@ -68,4 +68,4 @@ extern "C" {
 #ifdef __cplusplus
 }
 #endif // __cplusplus
-#endif // MAVLINK_RCAC _3_H
+#endif // MAVLINK_RCAC_3_H

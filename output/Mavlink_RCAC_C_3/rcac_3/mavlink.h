@@ -1,5 +1,5 @@
 /** @file
- *  @brief MAVLink comm protocol built from rcac _3.xml
+ *  @brief MAVLink comm protocol built from rcac_3.xml
  *  @see http://mavlink.org
  */
 #pragma once
@@ -29,6 +29,6 @@
 #endif
 
 #include "version.h"
-#include "rcac _3.h"
+#include "rcac_3.h"
 
 #endif // MAVLINK_H
