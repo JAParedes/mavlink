@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <mavlink>
-  <include>ardupilotmega3.xml</include>
+  <!-- <include>ardupilotmega3.xml</include> -->
   	<messages>
 		<message id="10001" name="RCAC_ATT_VARIABLES">
 			<description>Attitude controller RCAC variables</description>
